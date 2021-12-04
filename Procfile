@@ -1,1 +1,1 @@
-web: __init__:app
+web: app:app
