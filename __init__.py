@@ -7,6 +7,7 @@ import requests
 from flask import make_response
 import json
 import httplib2
+from flask_cors import CORS
 from oauth2client.client import FlowExchangeError
 from oauth2client.client import flow_from_clientsecrets
 from flask import session as login_session
@@ -19,6 +20,7 @@ from flask import Flask, render_template, \
 from database_setup import Base,Restaurant, MenuItem, User
 
 app = Flask(__name__)
+CORS(app)
 
 # New imports for create anti forgery state token
 # imports for GConnect
