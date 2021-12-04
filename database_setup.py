@@ -62,6 +62,6 @@ class MenuItem(Base):
         }
 
 
-engine = create_engine('postgresql://fzxqnbeogynqnf:8231e272e344841b1c950bc5a008267e81ae4ede993fa9173aeb8f49bde4e8c1@ec2-54-145-49-132.compute-1.amazonaws.com:5432/ddlr24mov40sca')
+engine = create_engine('postgresql://fzxqnbeogynqnf:8231e272e344841b1c950bc5a008267e81ae4ede993fa9173aeb8f49bde4e8c1@ec2-54-145-49-132.compute-1.amazonaws.com:5432/ddlr24mov40sca/postgresql-animated-91166')
 
 Base.metadata.create_all(engine)
