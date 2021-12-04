@@ -15,7 +15,8 @@ from sqlalchemy import create_engine, asc
 from flask import Flask, render_template, \
     request, redirect, jsonify, url_for, flash
 
-from RestaurantsWebsite.database_setup import Base, Restaurant, MenuItem, User
+# from RestaurantsWebsite.database_setup import Base, Restaurant, MenuItem, User
+from database_setup import Base,Restaurant, MenuItem, User
 
 app = Flask(__name__)
 
@@ -23,12 +24,14 @@ app = Flask(__name__)
 # imports for GConnect
 
 CLIENT_ID = json.loads(
+
+
     open(os.path.dirname(__file__)+'/client_secrets.json', 'r').read())['web']['client_id']
 
 APPLICATION_NAME = "Restaurant Menu Application"
-
+print(CLIENT_ID)
 # Connect to Database and create database session
-engine = create_engine('postgresql://restaurant:password@localhost/restaurant')
+engine = create_engine('postgresql://postgres:0000@localhost:5432/Restaurant')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
@@ -117,6 +120,7 @@ def gconnect():
 
     # Check that the access token is valid.
     access_token = credentials.access_token
+    print("TOKEN",access_token)
     url = ('https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=%s'
            % access_token)
     h = httplib2.Http()
@@ -504,4 +508,4 @@ def deleteMenuItem(restaurant_id, menu_id):
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.debug = True
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='127.0.0.1', port=5000)

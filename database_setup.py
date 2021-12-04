@@ -2,6 +2,8 @@ from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
+from psycopg2 import connect
+import psycopg2
 
 Base = declarative_base()
 
@@ -60,7 +62,10 @@ class MenuItem(Base):
         }
 
 
-engine = create_engine('postgresql://restaurant:password@localhost/restaurant')
+engine = create_engine('postgresql://postgres:0000@localhost:5432/Restaurant')
+
+
+
 
 
 Base.metadata.create_all(engine)
