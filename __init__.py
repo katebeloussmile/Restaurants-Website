@@ -504,7 +504,6 @@ def deleteMenuItem(restaurant_id, menu_id):
     else:
         return render_template('deleteMenuItem.html', item=itemToDelete)
 
-
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.debug = True
