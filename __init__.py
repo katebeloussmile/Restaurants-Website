@@ -511,6 +511,5 @@ if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.config['SESSION_TYPE']='filesystem'
     port = os.environ.get("PORT", 5000)
-
-app.debug = True
-app.run(debug=False)
+    # app.debug = True
+    app.run(debug=False)
