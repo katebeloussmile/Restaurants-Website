@@ -514,4 +514,4 @@ if __name__ == '__main__':
     # app.debug = True
     DBSession.init_app(app)
 
-app.run(debug=True)
+    # app.run(debug=True)
