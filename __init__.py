@@ -216,6 +216,7 @@ def gdisconnect():
     # Execute HTTP GET request to revoke current token.
     url = 'https://accounts.google.com/o/oauth2/revoke?token=%s' % login_session['access_token']
     h = httplib2.Http()
+    print(url, 'url')
     result = h.request(url, 'GET')[0]
     print('result is ')
     print(result)
@@ -232,7 +233,7 @@ def gdisconnect():
     else:
         # For whatever reason, the given token was invalid
         response = make_response(json.dumps(
-            'Failed to revoke token for given user.', 400))
+            'Failed to revoke token for given user.'), 400)
         response.headers['Content-Type'] = 'application/json'
         return response
 
@@ -513,6 +514,6 @@ if __name__ == '__main__':
     app.config['SESSION_TYPE']='filesystem'
     port = os.environ.get("PORT", 5000)
     # app.debug = True
-    DBSession.init_app(app)
+    # DBSession.init_app(app)
 
-    # app.run(debug=True)
+    app.run(debug=True)
