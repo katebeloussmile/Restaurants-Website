@@ -6,7 +6,7 @@
 h1 {
 	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
 	font-size: 50px;
-	color: #574540;
+	color: #9E3211;
 	line-height: 60px;
 	font-weight: 300;
 }
@@ -58,7 +58,7 @@ h3 {
 	margin: 0;
 	border-color: #9E3211;
 	border-width: 2px;
-	color: #9FB80A;;
+	color: #9E3211;;
 }
 .btn:hover {
 	border-color: #9E3211;
