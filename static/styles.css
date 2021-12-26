@@ -117,7 +117,7 @@ h3 {
 	margin: 45px 0;
 }
  .restaurant-list {
- 	background-color: #F0F0F0;
+ 	background-color: #3b3b3b;
  	padding: 20px;
 u }
  .restaurant-list:hover {
@@ -125,7 +125,7 @@ u }
  	padding: 20px;
 }
 .menu-item {
-	background: #F0F0F0;
+	background: #3b3b3b;
 	padding: 20px;
 	margin: 20px;
 	margin-left: -20px;
