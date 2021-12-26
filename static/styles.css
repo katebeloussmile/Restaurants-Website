@@ -19,26 +19,26 @@ h2 {
 
 h3 {
 	font-size: 18px;
-	color: #4A4A4A;
+	color: #521A09;
 	line-height: 23px;
 }
  p {
  	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
  	font-size: 16px;
- 	color: #7B7573;
+ 	color: #574540;
  	line-height: 24px;
  	font-weight: 400;
  }
 
  strong {
  	font-size: 16px;
- 	color: #7B7573;
+ 	color: #574540;
  	line-height: 24px;
  }
 
  a {
  	font-size: 14px;
- 	color: #0093B9;
+ 	color: #9E3211;
  	line-height: 17px;
  }
 .padding-top {
@@ -56,19 +56,19 @@ h3 {
 .btn {
 	padding: 20px;
 	margin: 0;
-	border-color: #9FB80A;
+	border-color: #9E3211;
 	border-width: 2px;
 	color: #9FB80A;;
 }
 .btn:hover {
-	border-color: #9FB80A;
+	border-color: #9E3211;
 }
 .btn.delete {
-	border-color: #aaaaaa;
-	color: #aaaaaa;
+	border-color: #574540;
+	color: #574540;
 }
 .btn.delete:hover {
-	border-color: #aaaaaa;
+	border-color: #574540;
 	color: red;
 }
 .glyphicon {
@@ -86,7 +86,7 @@ h3 {
 	margin-bottom: 0;
 	line-height: 16px;
 	font-size: 16px;
-	color: #7B7573;
+	color:  #574540;
 	font-weight: 400;
 }
 .divider {
@@ -107,7 +107,7 @@ h3 {
 }
 .banner.menu {
 	height: 150px;
-	background-color: #E1E17F;
+	background-color: #D14217;
 }
 .banner.profile {
 	height: 150px;
@@ -121,7 +121,7 @@ h3 {
  	padding: 20px;
 u }
  .restaurant-list:hover {
- 	background-color: #e1e17f;
+ 	background-color: #D14217;
  	padding: 20px;
 }
 .menu-item {
@@ -145,7 +145,7 @@ u }
 }
 .creator figcaption {
 	font-size: 14px;
-	color: #7B7573;
+	color: #574540;
 	font-weight: 400;
 	margin-top: -20px;
 }
