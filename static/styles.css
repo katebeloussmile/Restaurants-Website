@@ -56,12 +56,12 @@ h3 {
 .btn {
 	padding: 20px;
 	margin: 0;
-	border-color: #d6727c;
+	border-color: #3b540b;
 	border-width: 2px;
-	color: #d6727c;;
+	color: #3b540b;;
 }
 .btn:hover {
-	border-color: #d6727c;
+	border-color: #3b540b;
 }
 .btn.delete {
 	border-color: #6f6363;
