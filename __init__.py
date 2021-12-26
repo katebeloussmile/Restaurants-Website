@@ -71,18 +71,6 @@ def getUserID(email):
         return None
 
 
-# check the loggin status decorator
-# def login_required(f):
-# 	def decorated_function(*args, **kwargs):
-# 		if 'username' in login_session:
-# 			return f(*args, **kwargs)
-# 		else:
-# 			flash("You are not allowed to access there")
-# 			return redirect('/login')
-#
-# 	return decorated_function
-
-
 ########################
 #
 # Begin of the Websites
@@ -111,8 +99,6 @@ def gconnect():
     code = request.data
 
     try:
-        # Upgrade the authorization code into a credentials object
-        # oauth_flow = flow_from_clientsecrets('client_secrets.json', scope='')
         oauth_flow = flow_from_clientsecrets(os.path.dirname(__file__) + '/client_secrets.json', scope='')
         oauth_flow.redirect_uri = 'postmessage'
         credentials = oauth_flow.step2_exchange(code)
@@ -129,11 +115,6 @@ def gconnect():
            % access_token)
     h = httplib2.Http()
     result = json.loads(h.request(url, 'GET')[1])
-    # result_string = demjson.encode(result)
-    # print('############')
-    # fo = open("/var/www/MenuApp/RestaurantsWebsite/foo.txt", "w")
-    # fo.write(result_string)
-    # fo.close()
 
     # If there was an error in the access token info, abort.
     if result.get('error') is not None:
