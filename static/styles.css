@@ -6,7 +6,7 @@
 h1 {
 	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
 	font-size: 50px;
-	color: #ff0000;
+	color: #574540;
 	line-height: 60px;
 	font-weight: 300;
 }
@@ -117,7 +117,7 @@ h3 {
 	margin: 45px 0;
 }
  .restaurant-list {
- 	background-color: #3b3b3b;
+ 	background-color: #EB8566;
  	padding: 20px;
 u }
  .restaurant-list:hover {
@@ -125,7 +125,7 @@ u }
  	padding: 20px;
 }
 .menu-item {
-	background: #3b3b3b;
+	background: #EB8566;
 	padding: 20px;
 	margin: 20px;
 	margin-left: -20px;
